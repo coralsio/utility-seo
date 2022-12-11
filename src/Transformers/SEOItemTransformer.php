@@ -30,7 +30,7 @@ class SEOItemTransformer extends BaseTransformer
             'meta_description' => $SEOItems->meta_description,
             'created_at' => format_date($SEOItems->created_at),
             'updated_at' => format_date($SEOItems->updated_at),
-            'action' => $this->actions($SEOItems)
+            'action' => $this->actions($SEOItems),
         ];
 
         return parent::transformResponse($transformedArray);

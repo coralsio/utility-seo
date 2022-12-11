@@ -6,7 +6,6 @@ use Corals\Foundation\Transformers\FractalPresenter;
 
 class SEOItemPresenter extends FractalPresenter
 {
-
     /**
      * @param array $extras
      * @return SEOItemTransformer|\League\Fractal\TransformerAbstract

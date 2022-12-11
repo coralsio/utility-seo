@@ -39,5 +39,4 @@ class UtilitySEOViewTest extends TestCase
 
         $response->assertViewIs('utility-seo::seo_item.create_edit')->assertStatus(200);
     }
-
 }

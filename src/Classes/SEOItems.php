@@ -2,13 +2,11 @@
 
 namespace Corals\Modules\Utility\SEO\Classes;
 
-
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 class SEOItems
 {
-
     public function getRouteManager()
     {
         $routes = [];
@@ -18,7 +16,7 @@ class SEOItems
                 continue;
             }
 
-            if (!in_array('GET', $route->methods)) {
+            if (! in_array('GET', $route->methods)) {
                 continue;
             }
 
@@ -27,5 +25,4 @@ class SEOItems
 
         return $routes;
     }
-
 }

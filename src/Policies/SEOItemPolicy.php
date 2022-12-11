@@ -8,7 +8,6 @@ use Corals\User\Models\User;
 
 class SEOItemPolicy extends BasePolicy
 {
-
     /**
      * @param User $user
      * @return bool
@@ -18,6 +17,7 @@ class SEOItemPolicy extends BasePolicy
         if ($user->can('Utility::seo_item.view')) {
             return true;
         }
+
         return false;
     }
 
@@ -40,6 +40,7 @@ class SEOItemPolicy extends BasePolicy
         if ($user->can('Utility::seo_item.update')) {
             return true;
         }
+
         return false;
     }
 
@@ -53,6 +54,7 @@ class SEOItemPolicy extends BasePolicy
         if ($user->can('Utility::seo_item.delete')) {
             return true;
         }
+
         return false;
     }
 }

@@ -3,9 +3,9 @@
 namespace Corals\Modules\Utility\SEO\Http\Controllers;
 
 use Corals\Foundation\Http\Controllers\BaseController;
+use Corals\Modules\Utility\SEO\DataTables\SEOItemsDataTable;
 use Corals\Modules\Utility\SEO\Http\Requests\SEOItemsRequest;
 use Corals\Modules\Utility\SEO\Models\SEOItem;
-use Corals\Modules\Utility\SEO\DataTables\SEOItemsDataTable;
 use Corals\Modules\Utility\SEO\Services\SEOItemService;
 
 class SEOItemController extends BaseController
@@ -25,7 +25,6 @@ class SEOItemController extends BaseController
 
         parent::__construct();
     }
-
 
     public function index(SEOItemsRequest $request, SEOItemsDataTable $dataTable)
     {
@@ -67,7 +66,6 @@ class SEOItemController extends BaseController
      * @param SEOItem $seo_item
      * @return SEOItem
      */
-
     public function show(SEOItemsRequest $request, SEOItem $seo_item)
     {
         return $seo_item;

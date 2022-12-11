@@ -4,7 +4,6 @@ namespace Tests\Feature;
 
 use Corals\Modules\Utility\SEO\Facades\SEOItems;
 use Corals\Modules\Utility\SEO\Models\SEOItem;
-use Corals\Settings\Facades\Modules;
 use Corals\User\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Auth;
@@ -31,27 +30,27 @@ class UtilitySEOTest extends TestCase
     {
         $seo_items = ['seo1', 'seo2', 'seo3', 'seo4'];
         $seo_item = array_rand($seo_items);
-        $routes =SEOItems::getRouteManager();
+        $routes = SEOItems::getRouteManager();
         $this->seoRequest = [
             'slug' => $seo_items[$seo_item],
             'route' => array_rand($routes),
-            'title'=> $seo_items[$seo_item]
+            'title' => $seo_items[$seo_item],
         ];
         $response = $this->post('utilities/seo-items', $this->seoRequest);
-        
+
         $this->seo = SEOItem::query()->where([
             ['slug', $this->seoRequest['slug']],
             ['route', $this->seoRequest['route']],
             ['title', $this->seoRequest['title']],
         ])->first();
-        
+
         $response->assertDontSee('The given data was invalid')
             ->assertRedirect('utilities/seo-items');
 
         $this->assertDatabaseHas('utilities_seo_items', [
             'slug' => $this->seo->slug,
             'route' => $this->seo->route,
-            'title'=> $this->seo->title
+            'title' => $this->seo->title,
         ]);
     }
 
@@ -72,19 +71,19 @@ class UtilitySEOTest extends TestCase
         $this->test_utility_seo_store();
 
         if ($this->seo) {
-            $routes =SEOItems::getRouteManager();
+            $routes = SEOItems::getRouteManager();
             $route = array_rand($routes);
             $response = $this->put('utilities/seo-items/' . $this->seo->hashed_id, [
                 'slug' => $this->seo->slug,
                 'route' => $route,
-                'title'=> $this->seo->title,
+                'title' => $this->seo->title,
             ]);
 
             $response->assertRedirect('utilities/seo-items');
             $this->assertDatabaseHas('utilities_seo_items', [
                 'slug' => $this->seo->slug,
                 'route' => $route,
-                'title'=> $this->seo->title,
+                'title' => $this->seo->title,
             ]);
         }
         $this->assertTrue(true);
@@ -103,7 +102,7 @@ class UtilitySEOTest extends TestCase
             $this->assertDatabaseMissing('utilities_seo_items', [
                 'slug' => $this->seo->slug,
                 'route' => $this->seo->route,
-                'title'=> $this->seo->title ]);
+                'title' => $this->seo->title, ]);
         }
         $this->assertTrue(true);
     }
