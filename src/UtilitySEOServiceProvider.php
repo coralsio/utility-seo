@@ -2,6 +2,7 @@
 
 namespace Corals\Modules\Utility\SEO;
 
+use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Utility\SEO\Facades\SEOItems;
 use Corals\Modules\Utility\SEO\Models\SEOItem;
 use Corals\Modules\Utility\SEO\Providers\UtilityAuthServiceProvider;
@@ -9,11 +10,15 @@ use Corals\Modules\Utility\SEO\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
 
-class UtilitySEOServiceProvider extends ServiceProvider
+class UtilitySEOServiceProvider extends BasePackageServiceProvider
 {
-    public function boot()
+    /**
+     * @var
+     */
+    protected $packageCode = 'corals-utility-seo';
+
+    public function bootPackage()
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'utility-seo');
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'utility-seo');
@@ -28,10 +33,9 @@ class UtilitySEOServiceProvider extends ServiceProvider
         ]);
 
         $this->registerMorphMaps();
-        $this->registerModulesPackages();
     }
 
-    public function register()
+    public function registerPackage()
     {
         $this->app->register(UtilityAuthServiceProvider::class);
         $this->app->register(UtilityRouteServiceProvider::class);
@@ -49,7 +53,7 @@ class UtilitySEOServiceProvider extends ServiceProvider
         ]);
     }
 
-    protected function registerModulesPackages()
+    public function registerModulesPackages()
     {
         Modules::addModulesPackages('corals/utility-seo');
     }
