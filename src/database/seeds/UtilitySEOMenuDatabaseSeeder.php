@@ -28,7 +28,7 @@ class UtilitySEOMenuDatabaseSeeder extends Seeder
                     'icon' => 'fa fa-search',
                     'target' => null,
                     'roles' => '["1"]',
-                    'order' => 0
+                    'order' => 0,
                 ],
             ]
         );

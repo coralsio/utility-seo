@@ -35,7 +35,7 @@ class SEOItemsRequest extends BaseRequest
                 'type' => 'nullable|max:191',
                 'meta_keywords' => 'nullable',
                 'meta_description' => 'nullable',
-                'image' => 'image|max:' . maxUploadFileSize()
+                'image' => 'image|max:' . maxUploadFileSize(),
             ]);
         }
 

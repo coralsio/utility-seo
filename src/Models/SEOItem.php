@@ -9,10 +9,12 @@ use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
-
-class  SEOItem extends BaseModel implements HasMedia
+class SEOItem extends BaseModel implements HasMedia
 {
-    use PresentableTrait, LogsActivity, InteractsWithMedia , ModelPropertiesTrait;
+    use PresentableTrait;
+    use LogsActivity;
+    use InteractsWithMedia ;
+    use ModelPropertiesTrait;
 
     protected $table = 'utilities_seo_items';
 
@@ -29,7 +31,6 @@ class  SEOItem extends BaseModel implements HasMedia
     ];
 
     protected $guarded = ['id'];
-
 
     /**
      * @return string

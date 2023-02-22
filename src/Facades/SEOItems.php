@@ -1,11 +1,11 @@
 <?php
 
 namespace Corals\Modules\Utility\SEO\Facades;
+
 use Illuminate\Support\Facades\Facade;
 
 class SEOItems extends Facade
 {
-
     /**
      * @return mixed
      */
@@ -13,5 +13,4 @@ class SEOItems extends Facade
     {
         return \Corals\Modules\Utility\SEO\Classes\SEOItems::class;
     }
-
 }
