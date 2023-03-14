@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Transformers;
+namespace Corals\Utility\SEO\Transformers;
 
 use Corals\Foundation\Transformers\BaseTransformer;
-use Corals\Modules\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Models\SEOItem;
 
 class SEOItemTransformer extends BaseTransformer
 {

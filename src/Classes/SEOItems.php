@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Classes;
+namespace Corals\Utility\SEO\Classes;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Transformers;
+namespace Corals\Utility\SEO\Transformers;
 
 use Corals\Foundation\Transformers\FractalPresenter;
 

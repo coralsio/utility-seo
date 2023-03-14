@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Facades;
+namespace Corals\Utility\SEO\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,6 +11,6 @@ class SEOItems extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return \Corals\Modules\Utility\SEO\Classes\SEOItems::class;
+        return \Corals\Utility\SEO\Classes\SEOItems::class;
     }
 }

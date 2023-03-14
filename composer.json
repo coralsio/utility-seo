@@ -16,7 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Corals\\Modules\\Utility\\SEO\\": "src"
+            "Corals\\Utility\\SEO\\": "src"
         }
     },
     "autoload-dev": {
@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Corals\\Modules\\Utility\\SEO\\UtilitySEOServiceProvider"
+                "Corals\\Utility\\SEO\\UtilitySEOServiceProvider"
             ]
         }
     },

@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\DataTables;
+namespace Corals\Utility\SEO\DataTables;
 
 use Corals\Foundation\DataTables\BaseDataTable;
-use Corals\Modules\Utility\SEO\Models\SEOItem;
-use Corals\Modules\Utility\SEO\Transformers\SEOItemTransformer;
+use Corals\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Transformers\SEOItemTransformer;
 use Yajra\DataTables\EloquentDataTable;
 
 class SEOItemsDataTable extends BaseDataTable

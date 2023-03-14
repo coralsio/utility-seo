@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Http\Requests;
+namespace Corals\Utility\SEO\Http\Requests;
 
 use Corals\Foundation\Http\Requests\BaseRequest;
-use Corals\Modules\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Models\SEOItem;
 
 class SEOItemsRequest extends BaseRequest
 {

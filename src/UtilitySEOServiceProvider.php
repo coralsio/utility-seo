@@ -1,12 +1,12 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO;
+namespace Corals\Utility\SEO;
 
 use Corals\Foundation\Providers\BasePackageServiceProvider;
-use Corals\Modules\Utility\SEO\Facades\SEOItems;
-use Corals\Modules\Utility\SEO\Models\SEOItem;
-use Corals\Modules\Utility\SEO\Providers\UtilityAuthServiceProvider;
-use Corals\Modules\Utility\SEO\Providers\UtilityRouteServiceProvider;
+use Corals\Utility\SEO\Facades\SEOItems;
+use Corals\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Providers\UtilityAuthServiceProvider;
+use Corals\Utility\SEO\Providers\UtilityRouteServiceProvider;
 use Corals\Settings\Facades\Modules;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Providers;
+namespace Corals\Utility\SEO\Providers;
 
 use Corals\Foundation\Providers\BaseInstallModuleServiceProvider;
-use Corals\Modules\Utility\SEO\database\migrations\CreateSEOItemsTable;
-use Corals\Modules\Utility\SEO\database\seeds\UtilitySEODatabaseSeeder;
+use Corals\Utility\SEO\database\migrations\CreateSEOItemsTable;
+use Corals\Utility\SEO\database\seeds\UtilitySEODatabaseSeeder;
 
 class InstallModuleServiceProvider extends BaseInstallModuleServiceProvider
 {

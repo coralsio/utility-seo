@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Providers;
+namespace Corals\Utility\SEO\Providers;
 
-use Corals\Modules\Utility\SEO\Models\SEOItem;
-use Corals\Modules\Utility\SEO\Policies\SEOItemPolicy;
+use Corals\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Policies\SEOItemPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class UtilityAuthServiceProvider extends ServiceProvider

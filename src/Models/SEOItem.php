@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Models;
+namespace Corals\Utility\SEO\Models;
 
 use Corals\Foundation\Models\BaseModel;
 use Corals\Foundation\Traits\ModelPropertiesTrait;

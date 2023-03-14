@@ -1,12 +1,12 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Http\Controllers;
+namespace Corals\Utility\SEO\Http\Controllers;
 
 use Corals\Foundation\Http\Controllers\BaseController;
-use Corals\Modules\Utility\SEO\DataTables\SEOItemsDataTable;
-use Corals\Modules\Utility\SEO\Http\Requests\SEOItemsRequest;
-use Corals\Modules\Utility\SEO\Models\SEOItem;
-use Corals\Modules\Utility\SEO\Services\SEOItemService;
+use Corals\Utility\SEO\DataTables\SEOItemsDataTable;
+use Corals\Utility\SEO\Http\Requests\SEOItemsRequest;
+use Corals\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Services\SEOItemService;
 
 class SEOItemController extends BaseController
 {

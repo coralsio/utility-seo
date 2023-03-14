@@ -1,6 +1,6 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Services;
+namespace Corals\Utility\SEO\Services;
 
 use Corals\Foundation\Services\BaseServiceClass;
 

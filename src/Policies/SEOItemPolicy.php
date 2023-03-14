@@ -1,9 +1,9 @@
 <?php
 
-namespace Corals\Modules\Utility\SEO\Policies;
+namespace Corals\Utility\SEO\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\Modules\Utility\SEO\Models\SEOItem;
+use Corals\Utility\SEO\Models\SEOItem;
 use Corals\User\Models\User;
 
 class SEOItemPolicy extends BasePolicy
