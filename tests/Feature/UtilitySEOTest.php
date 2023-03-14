@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
+use Corals\User\Models\User;
 use Corals\Utility\SEO\Facades\SEOItems;
 use Corals\Utility\SEO\Models\SEOItem;
-use Corals\User\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Auth;
 use Tests\TestCase;

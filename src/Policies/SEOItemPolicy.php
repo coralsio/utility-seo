@@ -3,8 +3,8 @@
 namespace Corals\Utility\SEO\Policies;
 
 use Corals\Foundation\Policies\BasePolicy;
-use Corals\Utility\SEO\Models\SEOItem;
 use Corals\User\Models\User;
+use Corals\Utility\SEO\Models\SEOItem;
 
 class SEOItemPolicy extends BasePolicy
 {
