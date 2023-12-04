@@ -11,6 +11,6 @@
     "folder": "utility-seo",
     "icon": "fa fa-search",
     "require": {
-        "corals-utility": "^4.0"
+        "corals-utility": "^10.0.0"
     }
 }
